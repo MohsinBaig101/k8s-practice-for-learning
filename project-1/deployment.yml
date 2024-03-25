@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-1-deployment
+  labels:
+    app: v1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: project-1-pod
+  template:
+    metadata:
+      labels:
+        app: project-1-pod
+    spec:
+      containers:
+      - name: project-1-container
+        image: mohsinbaig/project-1-image:latest
+        ports:
+        - containerPort: 3000

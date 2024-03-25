@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+kind: ConfigMap
+metadata:
+  name: project-2-config-map
+  labels:
+    app: v1
+

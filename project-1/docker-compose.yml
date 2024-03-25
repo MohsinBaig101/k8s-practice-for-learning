@@ -1,0 +1,12 @@
+version: "2"
+services:
+  account:
+    container_name: account-service
+    #image: 'mohsinbaig/own_image'
+    build: .
+    image: 'project-1-image'
+    environment:
+      - PRODUCTION=false
+    ports:
+      - "3000:3000"
+    restart: always

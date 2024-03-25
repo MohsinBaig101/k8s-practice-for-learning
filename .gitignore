@@ -1,0 +1,4 @@
+/nodeport-practice/node_modules/*
+/project-1/node_modules/*
+/project-2/node_modules/*
+/project-3-config-map-secrets/node_modules/*
